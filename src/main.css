@@ -1,0 +1,45 @@
+.lc {
+  box-sizing: border-box;
+  padding: 0 0 0 36px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #121317;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow: hidden;
+  padding-bottom: 70px;
+
+  @media (max-width: 1013px) {
+    padding-left: 0;
+  }
+
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  p {
+    padding: 0;
+  }
+}
+
+.lc-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: #121317;
+  // max-width: 646px;
+  max-width: 734px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-wrap: balance;
+
+  @mixin <md {
+    font-size: 22px;
+  }
+}

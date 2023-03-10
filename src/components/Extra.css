@@ -1,0 +1,76 @@
+.lc-extra {
+  margin-top: 70px;
+
+  @mixin <md {
+    margin-top: 60px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @mixin <md {
+      margin-bottom: 32px;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    flex-shrink: 0;
+    // align-self: flex-start;
+    height: auto;
+    width: 397px;
+    margin-right: 103px;
+
+    @mixin <xl {
+      width: 330px;
+      margin-right: 68px;
+    }
+    @mixin <md {
+      display: none;
+    }
+  }
+  &__main {
+    flex-grow: 1;
+    min-width: 0;
+    position: relative;
+    top: -17px;
+    padding: 28px 0;
+
+    @mixin <xl {
+      top: auto;
+    }
+    @mixin <md {
+      margin-left: 51px;
+      padding-bottom: 0;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0 !important;
+  }
+  &__list-item {
+    display: flex;
+    // padding-left: 51px;
+    position: relative;
+
+    & + & {
+      margin-top: 57px;
+    }
+  }
+  &__list-icon {
+    height: 77px;
+    flex-shrink: 0;
+    position: absolute;
+    left: -51px;
+    top: -28px;
+  }
+  &__list-text {
+    position: relative;
+    z-index: 2;
+  }
+  &__button {
+    margin-top: 56px;
+  }
+}

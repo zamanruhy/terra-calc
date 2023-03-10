@@ -1,0 +1,75 @@
+.lc-advantages {
+  margin-top: 60px;
+
+  // @mixin <md {
+  //   margin-top: 60px;
+  // }
+
+  &__title {
+    margin-bottom: 44px;
+
+    @mixin <md {
+      margin-bottom: 32px;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+  }
+  &__item {
+    display: flex;
+    text-align: center;
+    flex-shrink: 0;
+    width: calc(100% / 3);
+    padding: 20px;
+
+    @mixin <md {
+      width: 50%;
+    }
+    @mixin <sm {
+      width: 100%;
+    }
+  }
+  &__item-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 254px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__item-pic {
+    width: 80px;
+    height: 80px;
+    background-color: #fafdff;
+    border: 1px solid #d2e6f4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  &__item-icon {
+    width: 36px;
+    height: auto;
+  }
+  &__item-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    min-height: 2.8em;
+    text-align: center;
+    color: #121317;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  &__item-text {
+    font-size: 12px;
+    color: #979797;
+  }
+}

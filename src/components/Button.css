@@ -1,0 +1,42 @@
+.lc-button {
+  display: inline-flex;
+  position: relative;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  a& {
+    text-decoration: none;
+  }
+
+  &_primary {
+    background-color: #1e5299;
+    color: #ffffff !important;
+
+    &:hover {
+      background-color: #1b57b2;
+    }
+  }
+
+  &_secondary {
+    background-color: #ffffff;
+    color: #121317 !important;
+
+    &:hover {
+      background-color: rgb(255 255 255 / 0.85);
+    }
+  }
+
+  &_md {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 52px;
+    padding: 8px 35px;
+    border-radius: 4px;
+  }
+}
