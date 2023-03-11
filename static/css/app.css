@@ -27,6 +27,7 @@
   }
 
 .lc-title {
+  font-family: "OpenSans-Bold", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
@@ -82,6 +83,7 @@
     }
 
   .lc-button_md {
+    font-family: "OpenSans-Bold", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
@@ -104,7 +106,7 @@
 
   .lc-contact__side {
     align-self: flex-start;
-    width: 312px;
+    width: 314px;
     flex-shrink: 0;
     background-color: #fafdff;
     border: 1px solid #d2e6f4;
@@ -156,6 +158,7 @@
   }
 
   .lc-contact__name {
+    font-family: "OpenSans-Bold", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.5;
@@ -181,6 +184,7 @@
   }
 
   .lc-contact__plea {
+    font-family: "OpenSans-Semibold", sans-serif;
     font-weight: 600;
     margin-bottom: 8px;
   }
@@ -225,6 +229,7 @@
     }
 
   .lc-contact__list-item b {
+      font-family: "OpenSans-Semibold", sans-serif;
       font-weight: 600;
     }
 
@@ -329,6 +334,11 @@
     z-index: 2;
   }
 
+  .lc-extra__list-text b {
+      font-family: "OpenSans-Semibold", sans-serif;
+      font-weight: 600;
+    }
+
   .lc-extra__button {
     margin-top: 56px;
   }
@@ -403,8 +413,9 @@
 }
 
   .lc-intro__title {
-    color: inherit;
+    font-family: "OpenSans-Bold", sans-serif;
     font-weight: 700;
+    color: inherit;
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 9px;
@@ -429,6 +440,7 @@
 }
 
   .lc-intro__subtitle {
+    font-family: "OpenSans-Bold", sans-serif;
     font-weight: 700;
     font-size: 18px;
   }
@@ -460,6 +472,7 @@
 }
 
   .lc-intro__slogan {
+    font-family: "OpenSans-Semibold", sans-serif;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -724,6 +737,7 @@
   }
 
   .lc-parts__item-name {
+    font-family: "OpenSans-Semibold", sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.4;
@@ -888,6 +902,7 @@
   }
 
   .lc-advantages__item-name {
+    font-family: "OpenSans-Semibold", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.4;
@@ -989,17 +1004,20 @@
     will-change: transform;
   }
 
-  .lc-examples__item-block:hover .lc-examples__item-img {
-    transform: scale(1.05);
+  @media (hover: hover) {
+    .lc-examples__item-block:hover .lc-examples__item-img {
+      transform: scale(1.05);
+    }
   }
 
   .lc-examples__item-title {
+    font-family: "OpenSans-Semibold", sans-serif;
+    font-weight: 600;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    /* font-weight: 600; */
     font-size: 16px;
     line-height: 140%;
     color: #ffffff !important;
@@ -1094,17 +1112,20 @@
     will-change: transform;
   }
 
-  .lc-advices__item-block:hover .lc-advices__item-img {
-    transform: scale(1.05);
+  @media (hover: hover) {
+    .lc-advices__item-block:hover .lc-advices__item-img {
+      transform: scale(1.05);
+    }
   }
 
   .lc-advices__item-title {
+    font-family: "OpenSans-Semibold", sans-serif;
+    font-weight: 600;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    /* font-weight: 600; */
     font-size: 16px;
     line-height: 140%;
     color: #ffffff !important;
