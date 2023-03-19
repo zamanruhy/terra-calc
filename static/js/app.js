@@ -16,16 +16,13 @@ const Advices = "";
   const containerEl = el.querySelector(".lc-parts__container");
   const itemEls = Array.from(el.querySelectorAll(".lc-parts__item"));
   const itemWidth = itemEls[0].offsetWidth;
-  let offsetWidth = containerEl.offsetWidth;
-  let scrollWidth = containerEl.scrollWidth;
   let index = 0;
   function onScroll() {
-    console.log(containerEl.scrollLeft === scrollWidth - offsetWidth);
     if (containerEl.scrollLeft === 0)
       el.classList.add("lc-parts_start");
     else
       el.classList.remove("lc-parts_start");
-    if (containerEl.scrollLeft === scrollWidth - offsetWidth)
+    if (containerEl.scrollLeft === containerEl.scrollWidth - containerEl.offsetWidth)
       el.classList.add("lc-parts_end");
     else
       el.classList.remove("lc-parts_end");
@@ -33,7 +30,7 @@ const Advices = "";
   function changeIndex(dir = 1) {
     index = Math.min(
       Math.max(0, index + dir),
-      Math.ceil((scrollWidth - offsetWidth) / itemWidth)
+      Math.ceil((containerEl.scrollWidth - containerEl.offsetWidth) / itemWidth)
     );
     return index;
   }
@@ -43,5 +40,8 @@ const Advices = "";
   });
   prevEl.addEventListener("click", () => {
     containerEl.scrollLeft = 243 * changeIndex(-1);
+  });
+  window.addEventListener("resize", () => {
+    containerEl.scrollLeft = index = 0;
   });
 })();
