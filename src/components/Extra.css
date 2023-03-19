@@ -69,6 +69,11 @@
   &__list-text {
     position: relative;
     z-index: 2;
+
+    b {
+      font-family: "OpenSans-Semibold", sans-serif;
+      font-weight: 600;
+    }
   }
   &__button {
     margin-top: 56px;

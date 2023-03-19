@@ -51,8 +51,9 @@
   }
 
   &__title {
-    color: inherit;
+    font-family: "OpenSans-Bold", sans-serif;
     font-weight: 700;
+    color: inherit;
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 9px;
@@ -69,6 +70,7 @@
     }
   }
   &__subtitle {
+    font-family: "OpenSans-Bold", sans-serif;
     font-weight: 700;
     font-size: 18px;
   }
@@ -91,6 +93,7 @@
     }
   }
   &__slogan {
+    font-family: "OpenSans-Semibold", sans-serif;
     font-weight: 600;
     display: flex;
     align-items: center;
